@@ -649,7 +649,12 @@ input[type="radio"].visually-hidden {
     font-weight: normal;
 }
 
-.slider-back-label::before {
+.slider button {
+    border: 0;
+    padding: 0;
+}
+
+.slider-button-back::before {
     content: "";
 
     position: absolute;
@@ -667,7 +672,7 @@ input[type="radio"].visually-hidden {
     user-select: none;
 }
 
-.slider-forward-label::before {
+.slider-button-forward::before {
     content: "";
 
     position: absolute;
@@ -1077,6 +1082,10 @@ input[type="radio"].visually-hidden {
     width: 620px
 }
 
+.services-hide {
+    display: none;
+}
+
 .services-delivery p {
     position: relative;
     z-index: 2;
@@ -1279,6 +1288,8 @@ input[type="radio"].visually-hidden {
 
 .contacts img {
     margin-bottom: 40px;
+
+    cursor: pointer;
 }
 
 .contacts .button {
@@ -1495,7 +1506,15 @@ input[type="radio"].visually-hidden {
     left: 50%;
     z-index: 5;
 
+    display: none;
+
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75); 
+}
+
+.modal-show {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 0.7s;
 }
 
 .modal-feedback {
@@ -2219,3 +2238,11 @@ input[type="radio"].visually-hidden {
     line-height: 24px;
 }
 
+/* ------------------ Animation Start ------------------ */
+
+@keyframes bounce {
+    0% {transform: translateY(-2000px);}
+    70% {transform: translateY(30px);}
+    90% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}

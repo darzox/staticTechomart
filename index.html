@@ -99,10 +99,8 @@
                                 <h2 class="slider-heading">Перфораторы<span>Настоящие мужские игрушки</span></h2>
                                 <img class="slider-image-second" src="img/slider-2.jpg" alt="Перфораторы">
                             </div>
-                            <label class="slider-back-label" for="slider-button-back"><span class="visually-hidden">Назад</span></label>
-                            <label class="slider-forward-label" for="slider-button-forward"><span class="visually-hidden">Вперед</span></label>
-                            <button id="slider-button-back" class="slider-button-back visually-hidden" type="button">Назад</button>
-                            <button id="slider-button-forward" class="slider-button-forward visually-hidden" type="button">Вперед</button>
+                            <button id="slider-button-back" class="slider-button-back" type="button"><span class="visually-hidden">Назад</span></button>
+                            <button id="slider-button-forward" class="slider-button-forward" type="button"><span class="visually-hidden">Вперед</span></button>
                             <a class="button slider-button" href="#">Открыть каталог</a>
                         </div>
                     </div>
@@ -210,7 +208,7 @@
                                     поднимая его на ваш этаж!
                                 </p>
                             </section>
-                            <section style="display: none;" class="services-guarantee">
+                            <section class="services-guarantee">
                                 <h3>Гарантия</h3>
                                 <p>
                                     Если купленный у нас товар поломается или заискрит,<br>
@@ -219,7 +217,7 @@
                                     Дом уж восстановите как-нибудь сами.
                                 </p>
                             </section>
-                            <section style="display: none;" class="services-credit">
+                            <section class="services-credit">
                                 <h3>Кредит</h3>
                                 <p>
                                     Залезть в долговую яму стало проще!<br>
@@ -301,7 +299,7 @@
                     </div>
                 </div>
         </footer>
-        <section class="modal modal-feedback" style="display: none;">
+        <section class="modal modal-feedback">
             <h2 class="visually-hidden">Обратная связь</h2>
             <form action="https://echo.htmlacademy.ru">
                 <div class="feedback-inputs">
@@ -324,10 +322,14 @@
                 <button type="button" class="modal-close-button"><img src="svg/form-2.svg" alt="Выход из попапа"></button>
             </form>
         </section>
-        <section class="modal modal-map" style="display: none;">
+        <section class="modal modal-map">
             <h2 class="visually-hidden">Как до нас добраться</h2>
             <img src="img/map popup.jpg" width="940" height="446" alt="Больная конешенная ул. 19/8, г. Санкт-Петербург">
             <button class="modal-close-button"><img src="svg/form-2.svg" alt="Выход из попапа"></button>
         </section>
+        <script src="js/slider.js"></script>
+        <script src="js/services.js"></script>
+        <script src="js/popup.js"></script>
+        <script src="js/map.js"></script>
     </body>
 </html>
