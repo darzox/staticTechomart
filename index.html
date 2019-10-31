@@ -46,7 +46,7 @@
                     <ul class="main-navigation">
                         <li><a href="#">Главная</a></li>
                         <li><a href="#">Компания</a></li>
-                        <li><a href="#">Каталог</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
                         <li><a href="#">Новости</a></li>
                         <li><a href="#">Спецпредложения</a></li>
                         <li><a href="#">Доставка</a></li>
@@ -91,14 +91,19 @@
                             </li>
                         </div>  
                         <div class="slider">
-                            <h2 class="slider-heading">Дрели<span>Соседям на радость!</span></h2>
+                            <div class="slider-first sliders-show"> 
+                                <h2 class="slider-heading ">Дрели<span>Соседям на радость!</span></h2>
+                                <img class="slider-image-first" src="img/slider-1.jpg" alt="Дрели">
+                            </div>
+                            <div class="slider-second slider-hide">
+                                <h2 class="slider-heading">Перфораторы<span>Настоящие мужские игрушки</span></h2>
+                                <img class="slider-image-second" src="img/slider-2.jpg" alt="Перфораторы">
+                            </div>
                             <label class="slider-back-label" for="slider-button-back"><span class="visually-hidden">Назад</span></label>
                             <label class="slider-forward-label" for="slider-button-forward"><span class="visually-hidden">Вперед</span></label>
-                            <button class="slider-button-back visually-hidden" type="button">Назад</button>
-                            <button class="slider-button-forward visually-hidden" type="button">Вперед</button>
+                            <button id="slider-button-back" class="slider-button-back visually-hidden" type="button">Назад</button>
+                            <button id="slider-button-forward" class="slider-button-forward visually-hidden" type="button">Вперед</button>
                             <a class="button slider-button" href="#">Открыть каталог</a>
-                            <img class="slider-image-first" src="img/slider-1.jpg" alt="Дрели">
-                            <img class="slider-image-second" style="display: none;" src="img/slider-2.jpg" alt="Перфораторы">
                         </div>
                     </div>
                 </ul>
@@ -296,29 +301,33 @@
                     </div>
                 </div>
         </footer>
-        <section class="modal modal-feedback">
+        <section class="modal modal-feedback" style="display: none;">
             <h2 class="visually-hidden">Обратная связь</h2>
             <form action="https://echo.htmlacademy.ru">
-                <p>
-                    <label for="feedback-username">Ваше имя:</label>
-                    <input class="feedback-input-username" id="feedback-username" name="feedback-username" type="text" placeholder="Представьтесь, пожалуйста">
-                </p>
-                <p>
-                    <label for="feedback-email">Ваш e-mail:</label>
-                    <input type="email" name="user-email" id="feedback-email" placeholder="Для отправки ответа">
-                </p>
-                <p>
-                    <label for="text-of-email">Текст письма:</label>
-                    <textarea name="user-text" id="text-of-email" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-                </p>
-                <button class="button feedback-button" type="submit">Отправить</button>
-                <button class="button modal-close-button">x</button>
+                <div class="feedback-inputs">
+                    <p>
+                        <label for="feedback-username">Ваше имя:</label>
+                        <input class="feedback-input-username" id="feedback-username" name="feedback-username" type="text" placeholder="Представьтесь, пожалуйста">
+                    </p>
+                    <p>
+                        <label for="feedback-email">Ваш e-mail:</label>
+                        <input type="email" name="user-email" id="feedback-email" placeholder="Для отправки ответа">
+                    </p>
+                    <p>
+                        <label for="text-of-email">Текст письма:</label>
+                        <textarea name="user-text" id="text-of-email" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+                    </p>
+                </div>
+                <div class="feedback-button-container">
+                    <button class="button feedback-button" type="submit">Отправить</button>
+                </div>
+                <button type="button" class="modal-close-button"><img src="svg/form-2.svg" alt="Выход из попапа"></button>
             </form>
         </section>
-        <section class="modal modal-map">
+        <section class="modal modal-map" style="display: none;">
             <h2 class="visually-hidden">Как до нас добраться</h2>
-            <img src="img/map popup.jpg" alt="Больная конешенная ул. 19/8, г. Санкт-Петербург">
-            <button class="button modal-close-button">x</button>
+            <img src="img/map popup.jpg" width="940" height="446" alt="Больная конешенная ул. 19/8, г. Санкт-Петербург">
+            <button class="modal-close-button"><img src="svg/form-2.svg" alt="Выход из попапа"></button>
         </section>
     </body>
 </html>
